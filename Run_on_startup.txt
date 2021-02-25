@@ -1,0 +1,33 @@
+#  Put this in crontab.  sudo crontab -e to edit
+#  String command lines together.
+*/15 * * * * /path_to_script
+
+#  First line in every script
+#!/bin/bash
+
+echo "Hello World!"
+
+# save the file, then make it executable
+sudo chmod +x hello-world.sh
+
+# then run the file
+./hello-world.sh
+
+# where do scripts typically go for cron
+/etc/crontab/chrontab.hourly or similar
+
+look for running programs with 
+ps agx | grep test_1_send_images.py
+
+MAKE THE SHELL USE PYTHON  read from sys.stdout
+#!/usr/bin/python
+
+import os
+import commands
+
+myHn = commands.getoutput('hostname')
+
+if myHn == "pi":
+  print "Normal: hostname is pi"
+else:
+  print "Abnormal: hostname is %s" % myHn
