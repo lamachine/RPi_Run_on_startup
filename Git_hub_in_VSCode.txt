@@ -1,0 +1,19 @@
+Git hub in VS 
+
+Pull Request
+
+Issues
+
+
+Upload a file (create a repository)
+  It appears, create the repository on GIT (for now)
+  git clone xxx to the location you want to work from on the local machine
+  File Open the repository
+  Create new file
+  Save to the repository folder
+
+
+Look under fork icon for source controls
+  New files are listd under STAGED CHANGES
+  U means unstaged - hover over file and click + icon
+  A means added
